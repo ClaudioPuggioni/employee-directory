@@ -13,7 +13,7 @@ function App() {
       <h1>Web Users of Acme Inc</h1>
       <div id="usersContainer">
         {users.map((ele) => (
-          <Card userCard={ele} />
+          <Card key={ele.login.uuid} userCard={ele} />
         ))}
       </div>
     </div>
