@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(189, 237, 254);
+}
+
+h1 {
+  color: rgb(0, 13, 79);
+  font-size: 45px;
+  margin: 20px 15px;
+  font-family: poppins;
+  font-weight: 900;
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +46,52 @@
 
 .App-link {
   color: #61dafb;
+}
+
+#usersContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  border-radius: 12px;
+  margin: 5px;
+  background-color: #61dafb;
+  width: 400px;
+  overflow: hidden;
+  box-shadow: 1px 1px 7px -3px black;
+}
+
+.imgBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePic {
+  height: 60px;
+  width: 60px;
+
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cardName {
+  font-weight: 500;
+}
+.cardEmail {
+  padding-top: 4px;
+  font-size: 14px;
 }
 
 @keyframes App-logo-spin {
